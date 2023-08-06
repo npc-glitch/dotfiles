@@ -1,0 +1,85 @@
+@import "macchiato.css";
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "bitstream vera mono";
+    font-size: 16px;
+}
+
+window#waybar {
+    background: alpha(@mantle, 0.9);
+    color: @text;
+}
+
+#window {
+    border-radius: 3px;
+    padding-right: 200px;
+    padding-left: 200px;
+/*    border: solid 0px alpha(@crust, 0.9);
+    background: alpha(@base, 0.9);
+    color: @text;
+    border-top: 0px; */
+}
+
+#workspaces {
+    margin-left: 10px;
+/*  border-radius: 3px;
+    border: solid 0px alpha(@crust, 0.9);
+    border-right: 0px;
+    background: alpha(@base, 0.9);
+    border-top: 0px; */
+}
+
+#workspaces button {
+    border-right: solid 2px alpha(@crust, 0.9);
+    color: @text;
+}
+
+#workspaces button.active {
+    color: @sapphire;
+    background: alpha(@crust, 0.9)
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+/*    border: solid 0px alpha(@crust, 0.9);
+    border-top: 0px;
+    border-radius: 3px;
+    background: alpha(@base, 0.9); */
+}
+
+#clock {
+    font-weight: bold;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#network {
+}
+
+#network.disconnected {
+    background: #f53c3c;
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}
+
+#tray {
+}
+
